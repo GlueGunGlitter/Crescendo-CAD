@@ -1,0 +1,63 @@
+' ******************************************************************************
+' swxJRNL.swj - journal recorded on 01/15/24 by USER
+' *****************************************************************************
+Dim swApp As Object
+
+Dim Part As Object
+Dim boolstatus As Boolean
+Dim longstatus As Long, longwarnings As Long
+
+Sub main()
+
+Set swApp = Application.SldWorks
+
+swApp.ActivateDoc2 "master scatch.SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Dim myModelView As Object
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Redraw
+Part.GraphicsRedraw2
+boolstatus = Part.Extension.SelectByID2("Point24@Sketch1", "EXTSKETCHPOINT", -0.05656530965241532427, 0.8525880890055298478, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line8@Sketch9", "EXTSKETCHSEGMENT", -0.07327828270128478039, 0.7725880890055297767, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Point24@Sketch1", "EXTSKETCHPOINT", -0.05656530965241532427, 0.8525880890055298478, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line1@Sketch3", "EXTSKETCHSEGMENT", -0.2989626697158156432, 0, 0, True, 0, Nothing, 0)
+boolstatus = Part.DeSelectByID("Line1@Sketch3", "EXTSKETCHSEGMENT", -0.5047324799970449583, 0, 0)
+boolstatus = Part.Extension.SelectByID2("Point26@Sketch1", "EXTSKETCHPOINT", 0, 0.920000000000000151, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line8@Sketch9", "EXTSKETCHSEGMENT", -0.02727683008456160615, 0.7725880890055297767, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Point26@Sketch1", "EXTSKETCHPOINT", 0, 0.920000000000000151, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Point24@Sketch1", "EXTSKETCHPOINT", -0.05656530965241532427, 0.8525880890055298478, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Point30@Sketch1", "EXTSKETCHPOINT", -0.06741191099447042812, 0.9765653096524150589, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line8@Sketch9", "EXTSKETCHSEGMENT", -0.08936515398708351487, 0.7725880890055297767, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Point30@Sketch1", "EXTSKETCHPOINT", -0.06741191099447042812, 0.9765653096524150589, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Point26@Sketch1", "EXTSKETCHPOINT", 0, 0.920000000000000151, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Point26@Sketch1", "EXTSKETCHPOINT", 0, 0.920000000000000151, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line99@Sketch1", "EXTSKETCHSEGMENT", 0.04000000000000005634, 0.9218137627733180572, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Point83@Sketch1", "EXTSKETCHPOINT", 0, 0.991220000000000212, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Point26@Sketch1", "EXTSKETCHPOINT", 0, 0.920000000000000151, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Point97@Sketch1", "EXTSKETCHPOINT", -0.1113930756112168075, 0.8980436110019485163, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Point24@Sketch1", "EXTSKETCHPOINT", -0.05656530965241532427, 0.8525880890055298478, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Point24@Sketch1", "EXTSKETCHPOINT", -0.05656530965241532427, 0.8525880890055298478, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line112@Sketch1", "EXTSKETCHSEGMENT", -0.1599999999999999756, 0.8445250177476804065, 0, True, 0, Nothing, 0)
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+boolstatus = Part.Extension.SelectByID2("Point83@Sketch1", "EXTSKETCHPOINT", 0, 0.991220000000000212, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Point30@Sketch1", "EXTSKETCHPOINT", -0.06741191099447042812, 0.9765653096524150589, 0, True, 0, Nothing, 0)
+boolstatus = Part.DeSelectByID("Point30@Sketch1", "EXTSKETCHPOINT", -0.06741191099447042812, 0.9765653096524150589, 0)
+boolstatus = Part.Extension.SelectByID2("Point97@Sketch1", "EXTSKETCHPOINT", -0.1113930756112168075, 0.8980436110019485163, 0, True, 0, Nothing, 0)
+Part.SetPickMode
+Part.ClearSelection2 True
+Part.SetPickMode
